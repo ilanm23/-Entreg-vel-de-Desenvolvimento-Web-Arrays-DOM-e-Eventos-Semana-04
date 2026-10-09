@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana 04 — Arrays, DOM e Eventos</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 760px; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+    button, input { padding: .55rem .7rem; margin: .25rem 0; }
+    li { margin: .25rem 0; cursor: pointer; }
+    .destaque { background: #fff0a8; font-weight: bold; }
+    .feito { text-decoration: line-through; color: #666; }
+    section { margin: 1.5rem 0; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
+  </style>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1 id="titulo">Blog</h1>
+
+  <section>
+    <h2>Parágrafos</h2>
+    <p class="texto">Este é o primeiro parágrafo de exemplo.</p>
+    <p class="texto">Este é o segundo parágrafo de exemplo.</p>
+  </section>
+
+  <section>
+    <h2>Lista de itens e tarefas</h2>
+    <p>Clique em qualquer item da lista para alternar a classe <code>feito</code>.</p>
+    <ul id="lista">
+      <li>Item inicial 1</li>
+      <li>Item inicial 2</li>
+      <li>Item inicial 3</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Eventos</h2>
+    <button id="botao" type="button">Passe o mouse ou clique</button>
+    <div>
+      <label for="nome">Seu nome:</label><br>
+      <input id="nome" type="text" placeholder="Digite seu nome">
+    </div>
+  </section>
+
+  <section>
+    <h2>Adicionar tarefa</h2>
+    <form id="formulario">
+      <label for="tarefa">Nova tarefa:</label><br>
+      <input id="tarefa" type="text" placeholder="Ex.: Estudar JavaScript">
+      <button type="submit">Adicionar</button>
+    </form>
+  </section>
+</body>
+</html>
